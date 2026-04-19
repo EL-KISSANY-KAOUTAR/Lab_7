@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">StarsGallery</string>
+    <string name="stars_gallery">Stars Gallery</string>
+    <string name="search">Rechercher</string>
+    <string name="filter">Filtrer</string>
+    <string name="all">Tous</string>
+    <string name="actors">Acteurs</string>
+    <string name="actresses">Actrices</string>
+    <string name="no_star_available">Aucune star disponible</string>
+    <string name="stars_gallery_label">✦ STARS GALLERY ✦</string>
+    <string name="category_label">CATÉGORIE</string>
+    <string name="modify_rating_label">✦ MODIFIER LA NOTE ✦</string>
+    <string name="default_rating_score">5.0 / 5.0</string>
+</resources>

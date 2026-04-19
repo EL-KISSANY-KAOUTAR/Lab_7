@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="#1A1713" app:cardCornerRadius="24dp"
+    app:cardElevation="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTATION DE LA STAR"
+            android:textColor="#D4AF37"
+            android:fontFamily="serif"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:id="@+id/tvvvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hande Erçel"
+            android:textColor="#D4AF37"
+            android:fontFamily="serif"
+            android:textSize="32sp"
+            android:textStyle="italic"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="16dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#66D4AF37"/> <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✦"
+                android:textColor="#D4AF37"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="12dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#66D4AF37"/>
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgStar"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@mipmap/star"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#D4AF37"/>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTRICE (TURQUIE)"
+            android:textColor="#9E822A"
+            android:textSize="12sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VOTRE NOTE"
+            android:textColor="#D4AF37"
+            android:textSize="14sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="20dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:progressTint="#D4AF37"
+            android:secondaryProgressTint="#9E822A"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.2 / 5.0"
+            android:textColor="#D4AF37"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="ANNULER"
+                android:textColor="#D4AF37"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnValidate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.2"
+                android:backgroundTint="#D4AF37"
+                android:text="VALIDER"
+                android:textColor="#1A1713"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="25dp"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
